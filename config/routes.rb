@@ -8,4 +8,10 @@ Rails.application.routes.draw do
   get "/products/:id" => "products#show"
   patch "/products/:id" => "products#update"
   delete "/products/:id" => "products#destroy"
+
+  # Users
+  post "/users" => "users#create"
+
+  #Sessions
+  post "/sessions" => "sessions#create"
 end
