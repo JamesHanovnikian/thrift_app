@@ -14,4 +14,11 @@ Rails.application.routes.draw do
 
   #Sessions
   post "/sessions" => "sessions#create"
+
+  #Carted Products
+  post "/carted_products" => "carted_products#create"
+  delete "/carted_products/:id" => "carted_products#destroy"
+
+  #Orders
+
 end

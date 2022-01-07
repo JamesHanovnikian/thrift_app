@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
 
   def show
     product = Product.find_by(id: params[:id])
-    render json: photo.as_json
+    render json: product.as_json
   end
 
   def update
